@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="sv" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="High quality fast food">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="icon" href="bilder/logo.png">
+    <title>Dambergs Diner</title>
+
+  </head>
+  <body>
+    <div id="wrapper">
+      <header> <img src="bilder/logo.png" alt="logga"> </header>
+
+      <nav> <a href="diner.html" class="diner"> Gå Till Startsidan </a> </nav>
+
+      <main>
+      <table>
+        <tr>
+          <th>Produkt</th>
+          <th>Namn</th>
+          <th>Pris</th>
+          <th>Antal</th>
+          <th>Ta Bort</th>
+        </tr>
+        <tr id="id1">
+          <td><img class="prod" src="bilder/burger.png" alt="Dambergs Special"></td>
+          <td>Dambergs Special</td>
+          <td>109 kr</td>
+          <td id="mat1">  </td>
+          <td> <button id="remove-btn-1" type="button"> Ta Bort Denna Vara (alla) </button>
+          </td>
+        </tr>
+        <tr id="id2">
+          <td><img class="prod" src="bilder/Cheeseburger.png" alt="Cheeseburgare"></td>
+          <td>Cheeseburgare</td>
+          <td>79 kr</td>
+          <td id="mat2"> </td>
+          <td><button id="remove-btn-2" type="button"> Ta Bort Denna Vara (alla) </button></td>
+        </tr>
+        <tr id="id3">
+          <td><img class="bg-kebab"src="bilder/genom.png" alt="Kebab i bröd"></td>
+          <td>Kebab i Bröd</td>
+          <td>85 kr</td>
+          <td id="mat3"></td>
+          <td><button id="remove-btn-3" type="button"> Ta Bort Denna Vara (alla) </button></td>
+        </tr>
+        <tr id="id4">
+          <td><img class="bg-pizza"src="bilder/genom.png" alt="Husets Special"></td>
+          <td>Husets Special</td>
+          <td>95 kr</td>
+          <td id="mat4"></td>
+          <td><button id="remove-btn-4" type="button"> Ta Bort Denna Vara (alla) </button></td>
+        </tr>
+        <tr id="id5">
+          <td><img class="bg-pizza2"src="bilder/genom.png" alt="Oliv Pizza"></td>
+          <td>Ingemar Special</td>
+          <td>90 kr</td>
+          <td id="mat5"></td>
+          <td><button id="remove-btn-5" type="button"> Ta Bort Denna Vara (alla) </button></td>
+        </tr>
+        <tr id="id6">
+          <td><img class="bg-sandwich"src="bilder/genom.png" alt="Mackans Special"></td>
+          <td>Mackans Special</td>
+          <td>59 kr</td>
+          <td id="mat6"></td>
+          <td><button id="remove-btn-6" type="button"> Ta Bort Denna Vara (alla) </button></td>
+        </tr>
+        <tr id="id7">
+          <td> <img class="bg-steak"src="bilder/genom.png" alt="Entrecôte"> </td>
+          <td>Entrecôte</td>
+          <td>159 kr</td>
+          <td id="mat7"></td>
+          <td><button id="remove-btn-7" type="button"> Ta Bort Denna Vara (alla) </button></td>
+        </tr>
+        <tr id="id8">
+          <td><img class="bg-coke"src="bilder/genom.png" alt="Läsk"></td>
+          <td>Läsk</td>
+          <td>10 kr</td>
+          <td id="mat8"> </td>
+          <td><button id="remove-btn-8" type="button"> Ta Bort Denna Vara (alla) </button></td>
+        </tr>
+        <tr id="id9">
+          <td><img class="bg-mikshake"src="bilder/genom.png" alt="Milkshake"></td>
+          <td>Milkshake</td>
+          <td>25 kr</td>
+          <td id="mat9"> </td>
+          <td><button id="remove-btn-9" type="button"> Ta Bort Denna Vara (alla) </button></td>
+        </tr>
+      </table>
+      </main>
+
+      <footer>
+        <table>
+          <tr id="all">
+            <td><button id="remove-all-btn" type="button"> Ta Bort Alla Varor </button></td>
+            <td id="total"></td>
+            <td><button id="check-out" type="button"> Betala </button> </td>
+          </tr>
+        </table>
+      </footer>
+
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="cart.js"></script>
+  </body>
+</html>

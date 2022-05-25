@@ -1,0 +1,245 @@
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  grid-area: he;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: white;
+
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: white;
+  grid-area: ma;
+  color: black;
+}
+
+nav{
+  display flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  grid-area: na;
+  color: white;
+}
+
+footer{
+
+  background-color: white;
+  color: black;
+  grid-area: fo;
+}
+
+.remove-btn{
+font-size: 25px;
+}
+
+#remove-all-btn{
+  font size: 25px;
+  color: white;
+  background-color: red;
+  border: none;
+  height: 50px;
+  width: 100px;
+  border-radius: 15px;
+  box-shadow:  10px 8px 10px #888888;
+
+}
+
+
+table, th, td{
+  width: 90%;
+  margin: auto;
+  table-layout: fixed;
+  text-align: center;
+
+
+}
+
+td{
+  align-items: center;
+  font-size: 30px;
+}
+
+th{
+ font-size: 40px;
+}
+
+#id1, #id2, #id3, #id4, #id5, #id6, #id7, #id8, #id9{
+  display: none;
+}
+
+button{
+
+  color: white;
+  background-color: black;
+  border: none;
+  font-weight: bold;
+  height: 50px;
+  width: 100px;
+  border-radius: 15px;
+  box-shadow:  10px 8px 10px #888888;
+
+
+}
+.prod{
+  width: 50%;
+  height: auto;
+}
+
+.diner{
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+#check-out{
+
+  color: black;
+  background-color: pink;
+  border: none;
+  font-weight: bold;
+  height: 50px;
+  width: 100px;
+  border-radius: 15px;
+  box-shadow:  10px 8px 10px #888888;
+
+}
+
+#wrapper{
+  height:100%;
+  display:grid;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "he he he he"
+  "na na na na"
+  ". . . ."
+  "ma ma ma ma"
+  "ma ma ma ma"
+  "ma ma ma ma"
+  "fo fo fo fo"
+  ;
+
+}
+
+
+
+
+@media screen  and (min-width: 577px) and (max-width: 1499px) {
+  #wrapper{
+
+    grid-template-rows: auto;
+    grid-template-areas:
+    "he he he he"
+    "na na na na"
+    ". . . ."
+    "ma ma ma ma"
+    "ma ma ma ma"
+    "ma ma ma ma"
+    "fo fo fo fo"
+    ;
+
+  }
+
+  th{
+    font-size: 30px;
+  }
+td{
+  font-size: 25px;
+}
+
+button{
+
+  color: white;
+  background-color: black;
+  border: none;
+  font-weight: bold;
+  height: 50px;
+  width: 100px;
+  border-radius: 15px;
+  box-shadow:  7px 6px 7px #888888;
+}
+#remove-all-btn, #check-out{
+  font size: 25px;
+  color: white;
+
+  border: none;
+  height: 40px;
+  width: 75px;
+  border-radius: 15px;
+  box-shadow:  7px 6px 7px #888888;
+
+}
+
+}
+@media screen and (max-width:576px) {
+
+  #wrapper{
+
+    grid-template-rows: auto;
+    grid-template-areas:
+    "he he he he"
+    "na na na na"
+    ". . . ."
+    "ma ma ma ma"
+    "ma ma ma ma"
+    "ma ma ma ma"
+    "fo fo fo fo"
+    ;
+
+
+
+  }
+
+  main{
+
+    color: black;
+    background-color: white;
+
+  }
+
+
+  th{
+    font-size: 20px;
+  }
+td{
+  font-size: 15px;
+}
+
+
+button{
+
+  color: white;
+  background-color: black;
+  border: none;
+  font-weight: bold;
+  height: 40px;
+  width: 100px;
+  border-radius: 15px;
+  box-shadow:  5px 4px 5px #888888;
+  font-size: 10px;
+}
+#remove-all-btn, #check-out{
+  font size: x-small;
+  border: none;
+  height: 25px;
+  width: 75px;
+  border-radius: 15px;
+  box-shadow:  5px 4px 5px #888888;
+
+}
+
+}
+
+
+a:link { text-decoration: none; }

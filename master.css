@@ -1,0 +1,288 @@
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  grid-area: he;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: black;
+  align-items: center;
+
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  grid-area: ma;
+  color: white;
+}
+
+footer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: black;
+  grid-area: fo;
+  color: white;
+
+
+}
+aside{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  grid-area: as;
+  position: sticky;
+  top: 0;
+  color: white;
+}
+
+.logga {
+    width: 400px; height: 400px;
+    background: url('../bilder/css_sprites.png') -10px -10px;
+}
+.bg-kebab {
+    width: 250px; height: 250px;
+    background: url('../bilder/css_sprites.png') -430px -10px;
+}
+.bg-mikshake {
+    width: 250px; height: 250px;
+    background: url('../bilder/css_sprites.png') -10px -430px;
+}
+.bg-pizza {
+    width: 250px; height: 250px;
+    background: url('../bilder/css_sprites.png') -280px -430px;
+}
+
+
+.bg-pizza2 {
+    width: 250px; height: 250px;
+    background: url('../bilder/css_sprites.png') -700px -10px;
+}
+.bg-sandwich {
+    width: 250px; height: 250px;
+    background: url('../bilder/css_sprites.png') -700px -280px;
+}
+.bg-steak {
+    width: 250px; height: 250px;
+    background: url('../bilder/css_sprites.png') -10px -700px;
+}
+.bg-burger {
+    width: 250px; height: 250px;
+    background: url('../bilder/css_sprites.png') -280px -700px;
+}
+.bg-Cheeseburger {
+    width: 250px; height: 250px;
+    background: url('../bilder/css_sprites.png') -550px -700px;
+}
+.bg-coke {
+    width: 250px; height: 250px;
+    background: url('../bilder/css_sprites.png') -970px -10px;
+}
+
+
+
+.meny{
+
+  justify-content: space-evenly;
+
+}
+
+.box1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.kontakt{
+
+  font-size: 20px;
+  border-style: solid;
+  border: 10px;
+  border-color: white;
+
+}
+
+p{
+
+  font-size: 20px;
+
+}
+
+button{
+  color: black;
+  background-color: white;
+  border: none;
+  font-weight: bold;
+  height: 50px;
+  width: 100px;
+  border-radius: 25px;
+
+
+}
+
+button:hover{
+  box-shadow: 0 0 30px 30px #b1b8ad inset;
+
+}
+
+
+#flip{
+  font-size: 25px;
+  height: 40px;
+  width: 480px;
+  text-align: center;
+  margin: auto;
+}
+
+#cart{
+align-items: center;
+height: auto;
+width: 100%;
+color: white;
+}
+.kundvagn{
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  color: white;
+
+
+}
+a:link { text-decoration: none; }
+
+
+#wrapper{
+  height:100%;
+  display:grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "he he he he"
+  ". ma ma as"
+  ". ma ma ."
+  ". ma ma ."
+  ". ma ma ."
+  ". ma ma ."
+  ". fo fo ."
+  ;
+
+}
+
+
+
+
+@media screen  and  (max-width: 1499px) {
+  #wrapper{
+grid-gap: 10px;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "he he he he"
+    "as as as as"
+    ". ma ma ."
+    ". ma ma ."
+    ". ma ma ."
+    ". ma ma ."
+    ". ma ma ."
+    "fo fo fo fo"
+    ;
+
+  }
+
+
+  .meny{
+
+    display: block;
+
+  }
+
+  footer{
+
+    background-color: #404040;
+    color: white;
+  }
+}
+@media screen and (max-width:576px) {
+
+  #wrapper{
+
+    grid-template-rows: auto;
+    grid-template-areas:
+    "he he he he"
+    "as as as as"
+    "ma ma ma ma"
+    "ma ma ma ma"
+    "ma ma ma ma"
+    "ma ma ma ma"
+    "ma ma ma ma"
+    "fo fo fo fo"
+    ;
+
+  }
+
+
+
+  footer{
+
+    background-color: white;
+    color: black;
+  }
+
+  main{
+
+    color: black;
+    background-color: white;
+    align-items: center;
+
+  }
+
+  aside{
+    background-color: white;
+    color: black;
+
+  }
+  body{
+    background-color: white;
+    align-items: center;
+  }
+
+button{
+    color: white;
+    background-color: black;
+    border: none;
+    font-weight: bold;
+    height: 50px;
+    width: 100px;
+    border-radius: 25px;
+    box-shadow:  10px 8px 10px #888888;
+
+
+  }
+
+  .meny{
+
+    display: block;
+
+  }
+  .kundvagn{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    color: black;
+
+
+}
+}
